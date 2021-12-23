@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Bucket List</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header--title">
+                <h1>Bucket List</h1>
+            </div>
+        </header>
+        <main class="list--container">
+            <div class="input--container">
+                <input type="text" class="list" id="list--input" placeholder="Please Enter A List Item">
+                <button class="list--btn" id="list--button" 
+                onclick={input()}>Submit</button>
+            </div>
+                <div class="list--section">
+                    <ul class="list--el" id="ul--el"></ul>
+                </div>
+
+
+        </main>
+    </div>
+    
+
+    
+<script src="script.js"></script>
+</body>
+</html>
