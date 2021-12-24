@@ -40,7 +40,7 @@ body{
     padding: 5px 15px;
     font-weight: bold;
     font-size: 1.2rem;
-    margin-right: 5px;
+    margin-right: 10px;
     color: #F97901;
     border: 1px solid #F97901;
     outline: #F97901;
@@ -72,6 +72,9 @@ body{
     cursor: pointer;
 }
 
+::placeholder {
+    opacity: 0.5;
+}
 
 /* .list--section {
     display: flex;
@@ -92,6 +95,8 @@ ul {
     padding-left: 0;
 }
 
-li {
-    margin-top: 5px;
+ul li {
+    width: 45%;
+    margin: 0 auto;
+    margin-top: 10px !important;
 }
