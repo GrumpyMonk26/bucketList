@@ -19,12 +19,24 @@
         </header>
         <main class="list--container">
             <div class="input--container">
-                <input type="text" class="list" id="list--input" placeholder="Please Enter A List Item">
-                <button class="list--btn" id="list--button" 
-                onclick={input()}>Submit</button>
+                <input type="text" 
+                        class="list" 
+                        id="input--el" 
+                        placeholder="Please Enter A List Item"
+                        >
+                <button class="list--btn" 
+                        id="list--button">
+                        Submit
+                        </button>
+                <button class="delete--btn" 
+                        id="delete--button">
+                        Clear
+                        </button>
             </div>
                 <div class="list--section">
-                    <ul class="list--el" id="ul--el"></ul>
+                    <ul class="list--el" 
+                        id="ul--el">
+                    </ul>
                 </div>
 
 

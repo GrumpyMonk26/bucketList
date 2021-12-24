@@ -30,7 +30,7 @@ body{
     border: 1px solid #F97901;
     outline: #F97901;
     font-size: 1.1rem;
-    margin-right: 10px;
+    margin-right: 5px;
     padding: 7px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -40,6 +40,7 @@ body{
     padding: 5px 15px;
     font-weight: bold;
     font-size: 1.2rem;
+    margin-right: 5px;
     color: #F97901;
     border: 1px solid #F97901;
     outline: #F97901;
@@ -54,15 +55,43 @@ body{
     cursor: pointer;
 }
 
-.list--section {
+.delete--btn {
+    padding: 5px 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 5px;
+    color: #fff;
+    background-color: #F97901;
+    border: 1px solid #F97901;
+    transition: transform .5s;
+    border-radius: 5px;
+}
+
+.delete--btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/* .list--section {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
     margin: 0 auto;
-}
+} */
 
 .list--el {
     font-size: 2rem;
     color: #F97901;
+}
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-top: 5px;
 }
