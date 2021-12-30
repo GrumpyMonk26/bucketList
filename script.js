@@ -16,11 +16,20 @@ if (inputValuesFromLocalStorage) {
 function renderVal() {
     let listItems = ""
     for (let i = 0; i < inputValues.length; i++) {
-        listItems += `<li> ${inputValues[i]} </li>`
+        listItems += `<li 
+                        class="li-element"
+                        onclick="remove(this)"
+                        > 
+                        ${inputValues[i]} 
+                        </li>`
         console.log(inputValues[i])
     }
     
     ulEl.innerHTML = listItems
+}
+
+function remove(){
+    listItems.setAttribute("onclick", "remove(this)");
 }
 
 // clear local storage on double click of clear button
@@ -38,6 +47,7 @@ inputBtn.addEventListener("click", function(){
     renderVal()
     console.log(inputValues)
 })
+
 
 
 
