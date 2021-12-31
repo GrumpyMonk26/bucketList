@@ -97,6 +97,24 @@ ul {
 
 ul li {
     width: 45%;
+    background-color: #fff;
+    padding: 5px 10px;
     margin: 0 auto;
-    margin-top: 10px !important;
+    margin-top: 50px !important;
+    position: relative;
+    border: solid 1px #F97901;
+}
+
+ul li:hover {
+    cursor: pointer;
+}
+
+ul li span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #F97901;
+    border: none;
 }

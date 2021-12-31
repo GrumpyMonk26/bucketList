@@ -1,3 +1,5 @@
+'use strict'
+
 let inputValues = [];
 const inputEl = document.getElementById('input--el')
 const inputBtn = document.getElementById("list--button")
@@ -13,24 +15,21 @@ if (inputValuesFromLocalStorage) {
 }
 
 // render input values in an li element
-function renderVal() {
-    let listItems = ""
-    for (let i = 0; i < inputValues.length; i++) {
-        listItems += `<li 
-                        class="li-element"
-                        onclick="remove(this)"
-                        > 
-                        ${inputValues[i]} 
-                        </li>`
-        console.log(inputValues[i])
+    function renderVal() {
+        let listItems = ""
+        for (let i = 0; i < inputValues.length; i++) {
+            listItems += `<li 
+                            id="list--element"
+                            class="li--element"
+                            > 
+                            ${inputValues[i]}
+                            <span>X</span> 
+                            </li>`
+            console.log(inputValues[i])
+        }
+        ulEl.innerHTML = listItems
     }
-    
-    ulEl.innerHTML = listItems
-}
 
-function remove(){
-    listItems.setAttribute("onclick", "remove(this)");
-}
 
 // clear local storage on double click of clear button
 deleteBtn.addEventListener("dblclick", function(){
@@ -40,15 +39,16 @@ deleteBtn.addEventListener("dblclick", function(){
 } )
 
 // pushes input value to inputValues array
-inputBtn.addEventListener("click", function(){
-    inputValues.push(inputEl.value)
-    inputEl.value = ""
-    localStorage.setItem("inputValues", JSON.stringify(inputValues) )
-    renderVal()
-    console.log(inputValues)
-})
+    inputBtn.addEventListener("click", function(){
+        inputValues.push(inputEl.value)
+        inputEl.value = ""
+        localStorage.setItem("inputValues", JSON.stringify(inputValues) )
+        renderVal()
+        console.log(inputValues)
+    })
 
 
+// removes the list item when clicked
 
 
 
