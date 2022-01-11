@@ -45,6 +45,8 @@ deleteBtn.addEventListener("dblclick", function(){
         localStorage.setItem("inputValues", JSON.stringify(inputValues) )
         renderVal()
         console.log(inputValues)
+
+
     })
 
 
